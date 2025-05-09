@@ -1,0 +1,105 @@
+ed90897	Baco	Fri May 9 09:20:25 2025 +0200	feat : check for duplicate names when creating an entity
+44ca593	Baco	Wed May 7 15:35:31 2025 +0200	feat : add routes in front end & start coding the checkup
+1d5a968	Baco	Wed May 7 14:57:50 2025 +0200	feat : create api endpoints for name existence verification
+1e0e8a3	Baco	Wed May 7 13:58:27 2025 +0200	fix,feat : add input verification system
+828b7c3	Baco	Wed May 7 10:44:57 2025 +0200	fix : date from projet not in correct format
+5c9db0d	Baco	Wed May 7 10:31:32 2025 +0200	fix : projet form on update
+68863b9	Baco	Wed May 7 09:43:01 2025 +0200	refactor,style : reduce code size and add comments in formfilierepattern
+ab32c63	Baco	Wed May 7 09:05:57 2025 +0200	style : change variable menu in form projet
+eb672dd	Baco	Wed May 7 08:56:48 2025 +0200	style : change the way drag/drop interacts with form fields
+5975f78	Baco	Wed May 7 08:56:26 2025 +0200	fix : console error when dragging
+a8a9de8	Baco	Tue May 6 08:49:05 2025 +0200	refactor : better/cleaner fix for double quotation bug mentionned in commit c30e15df458d86e9a63a8f6fa9da1ab75b6c3072
+2140515	Baco	Mon May 5 15:59:35 2025 +0200	docs : update doc to fix changes
+9949886	Baco	Mon May 5 15:58:11 2025 +0200	style : change hardcoded path for constant in tooltip and schema route
+c30e15d	Baco	Mon May 5 15:55:41 2025 +0200	fix : base file updates putting quotation marks around values that shouldnt (bad fix)
+b91c270	Baco	Mon May 5 15:49:51 2025 +0200	fix : base file updates being put on top of file
+f0662eb	Baco	Mon May 5 15:27:28 2025 +0200	docs : add swagger documentation & tags
+10d5abf	Baco	Mon May 5 11:54:43 2025 +0200	fix : frontend in formBase misinterpreting timestamp reader
+083a07c	Baco	Mon May 5 11:37:51 2025 +0200	docs : update frontend readme to fit changes
+aa7f5e0	Baco	Mon May 5 11:26:13 2025 +0200	fix : base list showing up only on the first input
+db9e1e5	Baco	Mon May 5 10:45:27 2025 +0200	docs : update frontend readme to fit changes
+2f0c252	Baco	Mon May 5 10:43:16 2025 +0200	fix : change the way merge input is registered on filiere creation
+567d272	Baco	Mon May 5 09:28:56 2025 +0200	fix : add proper merge input fetch
+3cd0c64	Baco	Mon May 5 08:37:20 2025 +0200	docs : update front doc to fit changes
+5fac46c	Baco	Fri May 2 15:33:49 2025 +0200	style : change tooltip messages for projet
+867e733	Baco	Fri May 2 15:33:34 2025 +0200	feat : add tooltip for projet
+8db7bf0	Baco	Fri May 2 15:17:53 2025 +0200	feat : add tooltip for base form
+972e3cb	Baco	Fri May 2 14:37:56 2025 +0200	fix,feat : add schema management for edit form filiere
+b2c0524	Baco	Fri May 2 14:18:33 2025 +0200	feat : add api endpoint to fetch a field's message
+1521fe1	Baco	Fri May 2 12:30:17 2025 +0200	fix,feat : tooltip message  for edit form in form filiere
+e01bb72	Baco	Fri May 2 11:38:19 2025 +0200	feat : add api endpoint to fetch tooltip messages
+d3d5cd9	Baco	Fri May 2 10:48:54 2025 +0200	fix : editing form not using the proper form types for inputs
+807785b	Baco	Wed Apr 30 15:55:51 2025 +0200	fix : remaining debug that stopped a feature from working
+27ea8db	Baco	Wed Apr 30 15:54:12 2025 +0200	feat : add tickable v-select for merge_input
+7f59d0b	Baco	Wed Apr 30 15:53:30 2025 +0200	docs : add JSON form file creation documentation
+055c40e	Baco	Wed Apr 30 12:33:17 2025 +0200	style : change tooltip messages
+44bfa52	Baco	Wed Apr 30 12:27:33 2025 +0200	docs : update readme to take changes into account
+536e8ac	Baco	Wed Apr 30 12:25:30 2025 +0200	feat : add tooltip depending on json file
+1e1905c	Baco	Wed Apr 30 12:13:15 2025 +0200	style : change time before tooltip opens
+0da66de	Baco	Wed Apr 30 12:05:56 2025 +0200	feat : add proof of concept of tooltip to guide the user
+327fe8d	Baco	Wed Apr 30 12:05:15 2025 +0200	style : make variable searching more user friendly
+00edcf5	Baco	Wed Apr 30 12:04:51 2025 +0200	fix :  variable search works
+a518794	Baco	Wed Apr 30 10:25:32 2025 +0200	style : variable list in form filiere
+4ff9522	Baco	Wed Apr 30 09:26:08 2025 +0200	style : remove useless comments
+9946f0d	Baco	Wed Apr 30 09:24:41 2025 +0200	style : make time adjust more responsive in FormBase
+bf89e32	Baco	Wed Apr 30 09:19:00 2025 +0200	fix : formBase's edit form not returning some of the values for increment/decrement
+4240c69	Baco	Wed Apr 30 09:16:23 2025 +0200	fix : add fallback values on increment & decrement
+92a30e5	Baco	Wed Apr 30 09:07:30 2025 +0200	style : make time adjust more responsive in FormFiliere
+d7fd79f	Baco	Tue Apr 29 14:57:10 2025 +0200	style : remove debug prints
+8d21fd6	Baco	Tue Apr 29 13:52:43 2025 +0200	feat : managing plural and singular for time in cfg files
+314d7c7	Baco	Tue Apr 29 12:07:51 2025 +0200	fix : double quotation mark appearing in config file
+583abfd	Baco	Tue Apr 29 11:48:20 2025 +0200	fix : time resolution options in filiere
+460bcca	Baco	Tue Apr 29 10:40:57 2025 +0200	docs : update front end readme to fit new features
+4a73809	Baco	Tue Apr 29 10:37:06 2025 +0200	refactor : change hardcoded path for constant in modification.py
+b22b607	Baco	Tue Apr 29 10:33:33 2025 +0200	feat : change projet dependancies after name change
+fa8fad7	Baco	Tue Apr 29 09:00:15 2025 +0200	fix : form displaying useless data in this context
+f07c5f7	Baco	Tue Apr 29 08:30:47 2025 +0200	update : webfontloader
+8827fa8	Baco	Tue Apr 29 08:26:04 2025 +0200	style : change station for projet in user help
+f07f927	Baco	Mon Apr 28 14:47:46 2025 +0200	docs : update front-end documentation to be clearer and take previous changes into account
+00cfdde	Baco	Mon Apr 28 14:47:13 2025 +0200	fix : projet creation reintegrated
+51cc7c6	Baco	Mon Apr 28 14:32:14 2025 +0200	fix : base creation reintegrated
+1120b35	Baco	Mon Apr 28 14:20:07 2025 +0200	fix : partial fix for create filiere
+b41f80d	Baco	Mon Apr 28 11:27:54 2025 +0200	feat : guide user in starting the app
+8669680	Baco	Mon Apr 28 11:00:45 2025 +0200	docs : update list of features based on recent changes
+3fbd235	Baco	Mon Apr 28 10:57:44 2025 +0200	fix : edit form not loading data proprely in projet & base
+1438c0c	Baco	Mon Apr 28 09:25:50 2025 +0200	feat : add persistance to the tab choice between base & filiere
+3ec07d0	Baco	Fri Apr 25 15:36:13 2025 +0200	style : add icon to the tab
+c567f98	Baco	Fri Apr 25 14:59:50 2025 +0200	fix : making explorer folder and file ```working-again```
+6b6910d	Baco	Fri Apr 25 12:24:32 2025 +0200	docs : add list of working and wip in front end
+63b79da	Baco	Fri Apr 25 11:40:02 2025 +0200	docs : update architecture diagram
+408e713	Baco	Fri Apr 25 11:35:27 2025 +0200	refactor : rename files to fit their functionnality better
+ad57a3c	Baco	Fri Apr 25 11:20:15 2025 +0200	refactor : rename station to projet in file names
+f1b964b	Baco	Fri Apr 25 11:02:47 2025 +0200	fix : return button not sending back correctly
+bb91c12	Baco	Fri Apr 25 09:33:39 2025 +0200	style : change file name to fit conventions
+22af5d4	Baco	Fri Apr 25 09:16:22 2025 +0200	feat : add traitement management from formTraitementReader branch
+654a9d4	Alistair Baco	Wed Apr 23 12:25:11 2025 +0200	doc : image fixing on README.md
+e1203fc	Alistair Baco	Wed Apr 23 12:24:20 2025 +0200	doc :  Edit README.md
+b55cf0a	Alistair Baco	Wed Apr 23 12:22:43 2025 +0200	doc :  Edit README.md to add diagram
+3d65c95	Baco	Wed Apr 23 12:21:07 2025 +0200	docs : add architecture diagram
+4ac9c14	Baco	Wed Apr 23 12:13:06 2025 +0200	docs : update README.md to new file architecture
+9544116	Baco	Wed Apr 23 12:13:05 2025 +0200	refactor : change from env variable to constant for default file path
+eed7f3e	Baco	Wed Apr 23 11:42:05 2025 +0200	style : removed useless debugging in console
+e76b302	Baco	Wed Apr 23 11:41:25 2025 +0200	fix : repair this context in add/remove field
+964fb98	Baco	Wed Apr 23 11:09:27 2025 +0200	style : change default path for a constant
+70fb988	Baco	Wed Apr 23 09:46:26 2025 +0200	rearrange : change file naming to pascal case to fit vuejs naming convetions
+5944c4a	Baco	Wed Apr 23 09:26:02 2025 +0200	rearrange : rename files for better readability and standards
+cf3fc68	Baco	Tue Apr 22 16:00:13 2025 +0200	rearrange : delete script_form, now useless
+6074aa1	Baco	Tue Apr 22 15:59:07 2025 +0200	style : correct name of filiere_form's export
+ac1d46c	Baco	Tue Apr 22 15:58:15 2025 +0200	refactor : change mixin for class in station_form
+955dfa2	Baco	Tue Apr 22 15:53:44 2025 +0200	refactor :  change mixin for class in base_form
+5481f7a	Baco	Tue Apr 22 15:36:57 2025 +0200	refactor : change mixin for class in filiere_form
+64c77a4	Baco	Fri Apr 18 15:34:26 2025 +0200	refactor : change function calls for better understanding
+6aa852d	Baco	Fri Apr 18 15:03:52 2025 +0200	style : rearrange func and better spacing
+10759f3	Baco	Fri Apr 18 14:41:12 2025 +0200	feat : form title changes depending on creation or editing
+94540a4	Baco	Fri Apr 18 14:06:50 2025 +0200	style : indent changes
+97b65d3	Baco	Fri Apr 18 13:48:47 2025 +0200	style,refactor : merge station update/create in one file and rename patern to pattern in code
+85349e0	Baco	Fri Apr 18 11:33:25 2025 +0200	refactor : merge update/create base form into one file
+4c16909	Baco	Fri Apr 18 11:10:46 2025 +0200	refactor : merged update/create form into one file
+2338420	Baco	Wed Apr 16 13:36:40 2025 +0200	change icon & select file
+acc4f26	Baco	Wed Apr 16 12:02:06 2025 +0200	fix other explorers
+a3b290e	Baco	Wed Apr 16 11:28:53 2025 +0200	differenciation folder/file mal nommée & documentée
+a816aac	Alistair Baco	Tue Apr 15 15:25:27 2025 +0200	Edit README.md
+296917d	Baco	Tue Apr 15 15:03:42 2025 +0200	fix more hardcoded stuff
+a7b5b32	Baco	Tue Apr 15 14:39:18 2025 +0200	better debugging on bases
+b6943e9	Baco	Tue Apr 15 14:38:12 2025 +0200	remove hardcoded domain dans bases.vue
+a8947f1	Baco	Tue Apr 15 14:23:24 2025 +0200	fix sur les projets, le reste bug tjrs
