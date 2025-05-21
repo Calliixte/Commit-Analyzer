@@ -33,6 +33,25 @@ def list_to_graph(commitTypeList): #returns two lists : one with each commit typ
                         typeAmount[commitType]=1
         return [list(typeAmount.keys()),list(typeAmount.values())]
 
+def get_day_year_from_time(time):
+        splitLine = time.split(" ")
+        date = splitLine[1:3]
+        year = splitLine[4]
+        time = (' '.join(date)+" "+str(year)).strip()
+        return time
+
+def get_commit_type(commitMessage): #returns a list of commit types, even if there is only one, empty list if no type is found
+        if TYPE_TEXT_SEPARATOR in commitMessage:
+                commitType,_ = commitMessage.split(TYPE_TEXT_SEPARATOR)
+                commitType = commitType.strip()
+                if MULTIPLE_TYPE_SEPARATOR in commitType:
+                        multipleCommitTypes = split_commit_types(commitType)
+                        return multipleCommitTypes
+                return [commitType]
+        else : 
+                return []
+                
+
 def occurence_graph():
         commitTypeList =[]
         with open(COMMIT_HISTORY_FILE_PATH) as commitFile : 
@@ -67,9 +86,10 @@ using this : " git log --pretty=format:"%h%x09%an%x09%ad%x09%s" " could work
 commitTypeList =[]
 with open(COMMIT_HISTORY_DATED_FILE_PATH) as commitFile : 
         for line in commitFile:
-                print(re.split(' |\t|\n',line)) #str split equivalent, with regex so it allows to split with either this or( | ) that
-
-
+                line = line.split("\t") #get list like this : [commitID,AutorName,Exact date,commit message]
+                line[2] = get_day_year_from_time(line[2])
+                line[3] = get_commit_type(line[3].strip())
+                print(line)
 
 
 
