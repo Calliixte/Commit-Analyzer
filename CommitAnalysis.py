@@ -54,8 +54,10 @@ def get_commit_type(commitMessage): #returns a list of commit types, even if the
         else : 
                 return []
 
-def commits_over_time_graph():
+def commits_over_time_graph(*typeList):
         """
+        no arg -> every commit type on graph
+        n args -> only these args, give your args in any order for example : func("feat","refactor") will get you a graph with feats and refactors
         get the corresponding file with : git log --pretty=format:"%h%x09%an%x09%ad%x09%s"
         """
         commit_counts = defaultdict(lambda: defaultdict(int))
@@ -94,7 +96,12 @@ def commits_over_time_graph():
         # Plot
         plt.figure(figsize=(12, 6))
         for ctype, y_values in plot_data.items():
-                plt.plot(sorted_dates, y_values, marker='o', label=ctype)
+                if(typeList==()):
+                        plt.plot(sorted_dates, y_values, marker='o', label=ctype)
+                else :
+                        if(ctype in typeList):
+                                plt.plot(sorted_dates, y_values, marker='o', label=ctype)
+
 
         plt.xlabel("Date")
         plt.ylabel("Number of commits")
@@ -132,4 +139,4 @@ def occurence_graph():
 
 
 # ---------------------- Main -----------------------
-occurence_graph()
+commits_over_time_graph("style","docs")
