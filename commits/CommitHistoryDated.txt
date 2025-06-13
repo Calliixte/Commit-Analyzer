@@ -1,3 +1,96 @@
+d00c590	Baco	Thu Jun 5 09:29:27 2025 +0200	Style : remove unwanted line
+a06bf7d	Baco	Thu Jun 5 09:28:22 2025 +0200	Update dockerhosted
+4b25d60	Baco	Fri May 30 14:18:13 2025 +0200	feat : convert lists to correct format on form submit
+869514e	Baco	Fri May 30 11:51:14 2025 +0200	fix : change export name for test2
+aee5591	Baco	Fri May 30 11:50:20 2025 +0200	feat : add foundation for the popup system
+9a8bb8c	Baco	Wed May 28 12:46:36 2025 +0200	docs : update readme to fit changes
+df34152	Baco	Wed May 28 12:45:16 2025 +0200	feat : update traitement from form
+f7f72cb	Baco	Wed May 28 12:38:11 2025 +0200	fix : section creation not working properly when no default section in cfg file
+742d47e	Baco	Wed May 28 12:28:47 2025 +0200	feat : load data into the edit form
+c6fe5b0	Baco	Wed May 28 10:59:35 2025 +0200	feat : add api endpoint to update section
+c8e632a	Baco	Wed May 28 10:14:54 2025 +0200	docs : update readme to fit changes
+de4d59c	Baco	Wed May 28 10:12:17 2025 +0200	feat : add connection between endpoint and frontend, now possible to add a new treatment
+a2f6638	Baco	Wed May 28 09:29:20 2025 +0200	feat : add true order for read_csv and testfile for read_netcdf
+01b0272	Baco	Wed May 28 09:28:53 2025 +0200	style : move add traitement to top of treeview
+30c38aa	Baco	Wed May 28 09:28:37 2025 +0200	feat,style,refactor : add api endpoint to add new section to file, rename different functions/variables and create different functions for repeated code
+8374b9e	Baco	Tue May 27 11:26:05 2025 +0200	style,feat : add action buttons to form
+cb4bfd9	Baco	Tue May 27 10:09:18 2025 +0200	style : enhance field looks & add different way of conveying information to the user
+ce291c6	Baco	Tue May 27 09:48:02 2025 +0200	fix : change the way the input field is added to a field, preventing unwanted behaviour
+57806b3	Baco	Tue May 27 09:37:00 2025 +0200	docs : update select field to support multiple value selection in JSON forms documentation
+3c7cbc6	Baco	Tue May 27 09:32:16 2025 +0200	feat : manage multiple or single element select in formTraitement
+4cc1880	Baco	Mon May 26 14:56:48 2025 +0200	style : add label to fields and create togglable debug mode
+d129fd7	Baco	Mon May 26 14:31:10 2025 +0200	style : remove page/console debugging and update title style
+66482af	Baco	Mon May 26 14:27:16 2025 +0200	refactor : move form_functions functions to different files depending on operations done
+e700060	Baco	Mon May 26 14:07:59 2025 +0200	refactor : move removeChildFields to external functions files
+33257cd	Baco	Mon May 26 14:01:22 2025 +0200	refactor : move continueDisplayedList to separate file
+6630322	Baco	Mon May 26 11:45:03 2025 +0200	feat : add element under its parent instead of at the end of form (also add convert.json as a more indented testing file)
+478730d	Baco	Mon May 26 11:33:54 2025 +0200	fix,feat : reload every child that had a value when deleted and manage delete with more than one depth level
+bf03f94	Baco	Mon May 26 11:14:07 2025 +0200	feat : dynamically remove fields when parent field content is empty
+c834d11	Baco	Mon May 26 11:02:36 2025 +0200	refactor : change the way dynamic fields are loaded
+2018c65	Baco	Mon May 26 09:52:42 2025 +0200	fix : vmodel not working properly with vuetify's v-select
+c019f67	Baco	Mon May 26 09:42:38 2025 +0200	feat : dynamic field child loading
+fa4b88b	Baco	Mon May 26 08:39:58 2025 +0200	fix:  formFieldData loaded twice in certain scenarios in FormTraitement
+4189f42	Baco	Fri May 23 15:31:15 2025 +0200	feat : auto load form when changing field without having to click the load button
+4faeb2f	Baco	Fri May 23 15:17:28 2025 +0200	feat : add dynamic loading of next fields (& a new field type)
+ad615ff	Baco	Fri May 23 14:09:11 2025 +0200	feat : add poc of dynamic field values reading
+0529f28	Baco	Fri May 23 14:08:44 2025 +0200	style : add label to config files
+e00c976	Baco	Fri May 23 11:13:45 2025 +0200	refactor,style : rename variables & move getOrderKeys to form_functions
+804f26b	Baco	Fri May 23 10:25:47 2025 +0200	feat : add fields characteristics fetching in traitement form
+8d97eea	Baco	Thu May 22 15:35:28 2025 +0200	Merge branch 'working-again' of gitlab.in2p3.fr:ipsl/espri/espri-obs/reobs/tools/web-administrateur-reobs into working-again
+cd27856	Baco	Thu May 22 15:35:26 2025 +0200	feat : add api endpoint to fetch form field including default values
+53c497a	Baco	Thu May 22 14:43:45 2025 +0200	feat : add dyanamic field for read type
+6112d86	Baco	Thu May 22 14:25:35 2025 +0200	docs : update docstrings in main.py
+97152d8	A. Baco	Thu May 22 12:27:12 2025 +0200	docs : edit ProjectSetup.md
+9f33537	Baco	Thu May 22 12:24:15 2025 +0200	feat : add form order fetching in traitement
+5c7905d	Baco	Thu May 22 10:45:25 2025 +0200	feat : pick traitement to create from a file
+4b88d11	Baco	Thu May 22 09:59:30 2025 +0200	feat : add api endpoint for traitement fetching
+2be0e7e	Baco	Thu May 22 09:16:48 2025 +0200	style : change input type in read_csv json config file
+ae8a6d4	Baco	Thu May 22 09:16:31 2025 +0200	feat : add distinction between create and update form
+f53db7d	Baco	Wed May 21 16:59:05 2025 +0200	Merge branch 'working-again' of gitlab.in2p3.fr:ipsl/espri/espri-obs/reobs/tools/web-administrateur-reobs into working-again
+7857993	Baco	Wed May 21 16:59:03 2025 +0200	style : remove caps to match field
+ad9415e	A. Baco	Wed May 21 16:56:47 2025 +0200	style : fix title in README
+206340a	Baco	Wed May 21 16:54:33 2025 +0200	docs,refactor : change docs organisation to be more user friendly, add some paragraphs and move docs to its own folder
+0259311	Baco	Wed May 21 16:19:16 2025 +0200	style : change ident in JSON doc
+fa809de	Baco	Wed May 21 16:18:57 2025 +0200	docs : update JSON traitement documentation with new fields and descriptions
+df2fef2	Baco	Tue May 20 15:55:42 2025 +0200	docs : add traitement docs and example traitement json
+5b1070d	Baco	Tue May 20 14:17:04 2025 +0200	fix : add mistakenly removed constant back
+4fc21a4	Baco	Tue May 20 14:13:52 2025 +0200	feat : added first concept of traitement form
+67ae8b3	Baco	Mon May 19 14:42:36 2025 +0200	docs : add style guidelines to README
+9f2748f	Baco	Mon May 19 14:13:41 2025 +0200	fix: add null check before setting currentFiliereName
+55b6884	Baco	Mon May 19 12:03:22 2025 +0200	style : rename filiere store and one variable in handleTreeItemClick
+f1d0922	Baco	Mon May 19 12:02:39 2025 +0200	feat,docs : add api endpoints for getting traitement keys/values & add docstrings to forgotten funcs
+7638a28	Baco	Mon May 19 10:03:17 2025 +0200	feat : add traitement showing logic
+76d7069	Baco	Fri May 16 15:56:47 2025 +0200	style: remove unnecessary styles for treeview list items
+6397df9	Baco	Fri May 16 15:32:52 2025 +0200	style,refactor : remove arrow for top/bottom directions at top/bottom of the treeview & refactor to use array
+779623d	Baco	Fri May 16 14:44:07 2025 +0200	style : adjust margins and add hover effects for treeview items
+cadb5fa	Baco	Fri May 16 14:36:24 2025 +0200	feat : move element in the interface in sync with the backend
+96aba09	Baco	Fri May 16 14:05:44 2025 +0200	style : add name to filiere store
+6ea1616	Baco	Fri May 16 13:55:04 2025 +0200	feat : move traitements in files through ui
+c276280	Baco	Fri May 16 11:21:53 2025 +0200	fix : change the splitter in data.py get_filiere_traitement_path
+f497cd1	Baco	Fri May 16 11:11:28 2025 +0200	feat : add create traitement button at the bottom of the treeview & made dummy event handling for treeview item
+5e9fc5b	Baco	Fri May 16 10:32:21 2025 +0200	refactor,style : change vtreeview for custom treeview component
+72ec720	Baco	Thu May 15 15:24:38 2025 +0200	style : change click from title to item in treeview listitem
+f86369c	Baco	Thu May 15 14:41:39 2025 +0200	style : update treeview backup message
+db933ac	Baco	Thu May 15 14:19:14 2025 +0200	refactor,style : split listItem into two files, one basic and one for treeview
+f4d7868	Baco	Thu May 15 14:13:54 2025 +0200	feat : auto closing of treeview components on click of other one
+cd0e90d	Baco	Thu May 15 13:40:23 2025 +0200	fix : better error handling in section.py
+028bd59	Baco	Thu May 15 10:53:30 2025 +0200	docs : update front end readme to fit changes
+f7fc711	Baco	Thu May 15 10:48:30 2025 +0200	feat : add traitement loading when clicking on component
+c568d32	Baco	Thu May 15 09:11:08 2025 +0200	feat,refactor : add prop for custom treeview options and move click handling to component
+5c4ad9f	Baco	Wed May 14 15:36:07 2025 +0200	feat,refactor: add api endpoint for traitement titles and refactor "get names" type functions in data.py
+4c22536	Baco	Wed May 14 14:54:07 2025 +0200	style : align icons to end of item and remove treeview color change on hover
+5e0be6a	Baco	Wed May 14 12:23:15 2025 +0200	feat : add treeview experimentation to filiere items
+72c0212	Baco	Wed May 14 11:57:05 2025 +0200	refactor : change component to be the complete item instead of the content
+0cd3385	Baco	Wed May 14 11:44:10 2025 +0200	refactor : create component for list item in different lists
+d9da47e	Baco	Wed May 14 08:37:16 2025 +0200	docs : add tag to new route
+b79255d	Baco	Tue May 13 15:49:55 2025 +0200	style : remove one comment and fix typo
+91b3804	Baco	Tue May 13 14:50:04 2025 +0200	feat : add api route to move section in traitement files
+2b46561	Baco	Mon May 12 14:31:07 2025 +0200	feat : add utility functions
+a154734	Baco	Mon May 12 10:29:40 2025 +0200	Merge branch 'working-again' of gitlab.in2p3.fr:ipsl/espri/espri-obs/reobs/tools/web-administrateur-reobs into working-again
+ae0dfb7	Baco	Mon May 12 10:28:34 2025 +0200	rearrange : add module list file
+c8cd7f1	Baco	Mon May 12 09:11:48 2025 +0200	fix : auto create .env file but this time it works
+84758f8	Baco	Mon May 12 08:57:18 2025 +0200	fix : auto create .env file in front end
+b18fd9b	Ashley Merienne	Mon May 12 08:35:09 2025 +0200	feat : Fix gitignore typo to ignore dist folder
 ed90897	Baco	Fri May 9 09:20:25 2025 +0200	feat : check for duplicate names when creating an entity
 44ca593	Baco	Wed May 7 15:35:31 2025 +0200	feat : add routes in front end & start coding the checkup
 1d5a968	Baco	Wed May 7 14:57:50 2025 +0200	feat : create api endpoints for name existence verification
@@ -8,6 +101,14 @@ ed90897	Baco	Fri May 9 09:20:25 2025 +0200	feat : check for duplicate names when
 ab32c63	Baco	Wed May 7 09:05:57 2025 +0200	style : change variable menu in form projet
 eb672dd	Baco	Wed May 7 08:56:48 2025 +0200	style : change the way drag/drop interacts with form fields
 5975f78	Baco	Wed May 7 08:56:26 2025 +0200	fix : console error when dragging
+e157ba5	Baco	Tue May 6 16:48:04 2025 +0200	style : remove useless variable & add comment
+9285f07	Baco	Tue May 6 16:47:23 2025 +0200	Merge remote-tracking branch 'refs/remotes/origin/docker-hosting' into docker-hosting
+395bf16	Baco	Tue May 6 16:44:42 2025 +0200	feat : docker compose network working
+9a6408d	Ashley Merienne	Tue May 6 15:51:17 2025 +0200	docs: update README to include project running instructions
+d24d8bd	Ashley Merienne	Tue May 6 15:49:51 2025 +0200	feat: restructure Dockerfiles and move docker-compose for better service management
+e52ea51	Baco	Tue May 6 15:42:51 2025 +0200	feat : add docker compose
+284eb3f	Baco	Tue May 6 14:04:56 2025 +0200	feat : add frontend dockerfile
+b295f84	Baco	Tue May 6 12:01:23 2025 +0200	feat : add backend dockerfile
 a8a9de8	Baco	Tue May 6 08:49:05 2025 +0200	refactor : better/cleaner fix for double quotation bug mentionned in commit c30e15df458d86e9a63a8f6fa9da1ab75b6c3072
 2140515	Baco	Mon May 5 15:59:35 2025 +0200	docs : update doc to fix changes
 9949886	Baco	Mon May 5 15:58:11 2025 +0200	style : change hardcoded path for constant in tooltip and schema route
@@ -103,3 +204,94 @@ a816aac	Alistair Baco	Tue Apr 15 15:25:27 2025 +0200	Edit README.md
 a7b5b32	Baco	Tue Apr 15 14:39:18 2025 +0200	better debugging on bases
 b6943e9	Baco	Tue Apr 15 14:38:12 2025 +0200	remove hardcoded domain dans bases.vue
 a8947f1	Baco	Tue Apr 15 14:23:24 2025 +0200	fix sur les projets, le reste bug tjrs
+4b09b39	Benchergui	Fri May 3 14:11:10 2024 +0200	commencement de la documentation
+c2a5919	Benchergui	Tue Apr 16 16:35:12 2024 +0200	Merge branch 'main' of gitlab.in2p3.fr:ipsl/espri/espri-obs/reobs/tools/web-administrateur-reobs
+bb08626	Benchergui	Tue Apr 16 16:35:02 2024 +0200	ajout de commentaire
+c2bdb13	Timothee Benchergui	Tue Apr 16 16:34:11 2024 +0200	Merge branch 'CorrectionDirective' into 'main'
+9cf9e5b	Timothee Benchergui	Tue Apr 16 16:32:40 2024 +0200	Merge branch 'main' into 'CorrectionDirective'
+f5f989e	Baptiste Fournie	Tue Apr 16 12:58:01 2024 +0200	Modification des fonctions getDirective et changeTemporaireUserInput
+dd73225	Benchergui	Tue Apr 16 11:24:43 2024 +0200	modification du fichier
+e88cd7d	Benchergui	Tue Apr 16 11:15:04 2024 +0200	intégration du README qui explique comment le projet est fait
+bc232bc	Benchergui	Tue Apr 16 11:14:21 2024 +0200	correction de quelque petites erreurs
+e5d91ff	Benchergui	Mon Apr 15 16:06:23 2024 +0200	correction de quelque bugs
+817322a	Benchergui	Mon Apr 15 09:32:14 2024 +0200	changement de couleur du bouton fermer
+ab4bb8d	Benchergui	Mon Apr 15 09:30:48 2024 +0200	Merge branch 'main' of gitlab.in2p3.fr:ipsl/espri/espri-obs/reobs/tools/web-administrateur-reobs
+bd382c0	Benchergui	Mon Apr 15 09:23:09 2024 +0200	ajout de jolie icon
+a8b6663	Timothee Benchergui	Mon Apr 15 09:22:02 2024 +0200	Merge branch 'Configuration-Dict_directive' into 'main'
+948682c	Baptiste Fournie	Fri Apr 12 17:19:08 2024 +0200	modifcation du  v-select pour accepter les directives disable
+b7d680f	Baptiste Fournie	Fri Apr 12 15:00:15 2024 +0200	configuartion dict directive
+5713575	Timothee Benchergui	Fri Apr 12 14:08:41 2024 +0200	Merge branch 'DirectiveV2' into 'main'
+d923e81	Benchergui	Fri Apr 12 13:59:07 2024 +0200	dispositif de variable
+d3515b8	Baptiste Fournie	Fri Apr 12 13:54:39 2024 +0200	modification du style WindowDirective
+137a53a	Benchergui	Fri Apr 12 13:51:51 2024 +0200	modifications des constantes
+29c4095	Baptiste Fournie	Fri Apr 12 11:43:58 2024 +0200	ajout des docstings et des commentaires
+4f5a7ab	Baptiste Fournie	Fri Apr 12 11:13:27 2024 +0200	ajout du bouton valider pour sauvegarder la directive ajouté
+521d552	Baptiste Fournie	Thu Apr 11 17:26:45 2024 +0200	ajout de l'affichage des erreurs
+a08538a	Baptiste Fournie	Thu Apr 11 16:50:47 2024 +0200	Ajout du formulaire et de la logique pour les choix du directives
+2235792	Timothee Benchergui	Thu Apr 11 12:07:27 2024 +0200	Merge branch 'directive' into 'main'
+2a1e9bb	Baptiste Fournie	Thu Apr 11 12:04:30 2024 +0200	Création des fenetres pour l'ajout des directives
+33e29a2	Benchergui	Thu Apr 11 11:17:06 2024 +0200	mise en place des variables
+8344d13	Benchergui	Wed Apr 10 13:09:24 2024 +0200	pour ne pas avoir des fichiers inutiles
+8b8b5a5	Benchergui	Tue Apr 9 15:57:45 2024 +0200	optimisation de l'interface utilisateur
+6b034d2	Benchergui	Mon Apr 8 12:21:57 2024 +0200	mise en place à l'accès de la liste des filières de la station courante dans le formulaire de création  de modification
+695c507	Benchergui	Mon Apr 8 10:54:42 2024 +0200	ajout d'une petite fonctionnalité sur les v-select des formulaire et formatage du code en générale
+34ca1be	Benchergui	Fri Apr 5 16:59:54 2024 +0200	correction de plusieurs bugs mineurs
+f65778b	Benchergui	Fri Apr 5 15:01:03 2024 +0200	correction des bugs et factorisations des composants et des scripts des formulaire
+2f5c004	Benchergui	Thu Apr 4 13:09:09 2024 +0200	la suite du dernier commit
+1a99b64	Benchergui	Thu Apr 4 12:20:30 2024 +0200	modification des formulaires de modification
+9e36faa	Benchergui	Tue Apr 2 17:12:27 2024 +0200	correction d'une faute de frappe
+48f36bf	Benchergui	Tue Apr 2 17:11:26 2024 +0200	mise en place de nouvelle vérifications sur le formulaire des projets et des filières
+c5af269	Benchergui	Thu Mar 28 16:48:12 2024 +0100	avancement des vérifications sur le formulaire de création des filières
+3a1d98a	Benchergui	Thu Mar 28 10:05:45 2024 +0100	ajout de différents select pour le formulaire des bases pour ne pas laisser trop de choix possible
+e25c905	Benchergui	Wed Mar 27 13:26:12 2024 +0100	correction de bugs d'affichage
+172daea	Benchergui	Tue Mar 26 17:00:35 2024 +0100	selection de fichier qui marche
+1b19e11	Benchergui	Tue Mar 26 16:48:28 2024 +0100	ajout des fichiers automatique
+ae372ca	Benchergui	Tue Mar 26 15:30:30 2024 +0100	ajout des chemins de dossier pour certains champs de saisis
+0f43b24	Benchergui	Mon Mar 25 10:58:43 2024 +0100	changement de l'affichage des onglets dans les bases et filières
+e7b8556	Benchergui	Thu Mar 21 16:56:11 2024 +0100	essaye de chemins de dossier
+0461e4e	Benchergui	Thu Mar 21 11:40:13 2024 +0100	mise en place de la modification des filières
+7594afc	Benchergui	Wed Mar 20 17:06:40 2024 +0100	modification des filières
+427bec9	Benchergui	Wed Mar 20 12:20:25 2024 +0100	mise en place des filieres
+87f43db	Benchergui	Tue Mar 19 15:16:53 2024 +0100	ajout de fonctionnalités durant la création d'un projet/station
+b1e9178	Benchergui	Tue Mar 19 12:26:09 2024 +0100	ajout d'une barre de scroll pour la liste des variables qui était trop longue
+e356ffa	Benchergui	Tue Mar 19 12:20:41 2024 +0100	ajout d'une barre de recherche pour les variables
+0b0d96e	Benchergui	Mon Mar 18 16:57:48 2024 +0100	classement des variables par sections
+307a109	Benchergui	Mon Mar 18 14:03:24 2024 +0100	mise en place d'onglet pour voir les configurations
+7683738	Benchergui	Mon Mar 18 09:57:24 2024 +0100	ajout de variables d'environnment pour l'adresse du backend
+4a10887	Benchergui	Thu Mar 14 16:51:29 2024 +0100	correction d'un commentaire
+b4bd244	Benchergui	Thu Mar 14 16:50:26 2024 +0100	correction de commentaire
+d49e348	Benchergui	Thu Mar 14 16:48:07 2024 +0100	correction des linters et de la doc
+f6ac0e4	Benchergui	Thu Mar 14 11:27:58 2024 +0100	mise en place d'une barre de recherche pour chercher plus facilement les projets ou les bases dans la liste
+ea41bf4	Benchergui	Wed Mar 13 16:21:54 2024 +0100	correction de l'écriture des fichier de config
+d78cbe9	Benchergui	Tue Mar 12 09:45:26 2024 +0100	mise en place de la pagination pour l'affichage des stations et des bases
+b2cc074	Benchergui	Mon Mar 11 16:53:10 2024 +0100	mise à jour de json vers cfg pour la suppression
+1f3804e	Benchergui	Mon Mar 11 16:17:14 2024 +0100	passage du json au cfg pour l'affichage des données et la modifications des stations et bases
+35ad066	Benchergui	Fri Mar 8 16:06:28 2024 +0100	ajout du dossier treatment pour faire des tests sur les fichiers de config
+ee576dc	Benchergui	Fri Mar 8 14:39:12 2024 +0100	ajout d'une fenetre de confirmation avant de supprimer un projet ou une base
+6c7db28	Benchergui	Fri Mar 8 14:12:50 2024 +0100	possiblité de supprimer des projets et des bases
+db8083b	Benchergui	Fri Mar 8 12:01:27 2024 +0100	ajout des tests de validation quand on modifie une base ou un projet
+d789e1b	Benchergui	Fri Mar 8 11:49:07 2024 +0100	actualisation automatique de la liste des projets / bases quand il y'a une création ou modification
+478c3a3	Benchergui	Fri Mar 8 09:28:35 2024 +0100	changement de place des fichier json et mise en place de variables globale pour les urls du back-end
+a425412	Benchergui	Fri Mar 8 09:12:12 2024 +0100	possiblité de modifier un projet ou une base
+970c008	Benchergui	Thu Mar 7 10:10:17 2024 +0100	correction d'un petit bug
+df1faba	Benchergui	Thu Mar 7 09:58:08 2024 +0100	séparation du back-end et du front-end
+291b0f8	Benchergui	Wed Mar 6 16:46:54 2024 +0100	optimisation
+e1883a9	Benchergui	Wed Mar 6 15:23:36 2024 +0100	ajout de constante
+d4333f5	Benchergui	Wed Mar 6 14:41:05 2024 +0100	quelque que corrections
+5735a28	Benchergui	Wed Mar 6 14:16:30 2024 +0100	correction de la vérification pour le format des version pour les formulaire
+bc6108d	Benchergui	Wed Mar 6 13:12:09 2024 +0100	changement du design de l'application
+f7c6bde	Benchergui	Wed Mar 6 10:32:05 2024 +0100	mise en place d'un fichier de configuration qui stock toutes les urls pour aller chercher les fichiers.json
+500365c	Benchergui	Tue Mar 5 16:22:14 2024 +0100	factorisation des formulaires en un seul fichier.js
+bc37006	Benchergui	Tue Mar 5 10:43:36 2024 +0100	documentation du code
+b77166e	Benchergui	Mon Mar 4 16:49:24 2024 +0100	petite modification de l'ergonomie
+c0afb8b	Benchergui	Mon Mar 4 15:40:19 2024 +0100	modification du code des components bases et stations pour plus de lisibilité
+3addb0c	Benchergui	Mon Mar 4 15:38:57 2024 +0100	mise en place des variables pour le formulaire des bases
+e5e124d	Benchergui	Mon Mar 4 14:14:23 2024 +0100	ajout de variables dans le formulaire des stations
+2c79efa	Benchergui	Mon Mar 4 09:33:26 2024 +0100	mise à jour du css
+6f80d0d	Benchergui	Fri Mar 1 16:24:00 2024 +0100	modification du fichier de configuration du formulaire des stations
+af3b3c8	Benchergui	Fri Mar 1 15:18:41 2024 +0100	correction des lint errors
+fad0bf1	Benchergui	Fri Mar 1 15:00:04 2024 +0100	changement de css pour une meilleur ergonomie
+c210c0e	Benchergui	Fri Mar 1 11:39:26 2024 +0100	ajout de bibiothèque axios pour récupérer les données dans les fichiers json.
+7ae962d	Benchergui	Fri Mar 1 11:13:45 2024 +0100	affichage du formulaire quand on veut ajouter une nouvelle base
+91c320f	Benchergui	Fri Mar 1 11:12:51 2024 +0100	affichage des bases de la station selectionnée
+7f75109	Benchergui	Thu Feb 29 16:53:53 2024 +0100	création du projet

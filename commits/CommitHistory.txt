@@ -1,3 +1,109 @@
+d00c590 Style : remove unwanted line
+a06bf7d Update dockerhosted
+4b25d60 feat : convert lists to correct format on form submit
+869514e fix : change export name for test2
+aee5591 feat : add foundation for the popup system
+9a8bb8c docs : update readme to fit changes
+df34152 feat : update traitement from form
+f7f72cb fix : section creation not working properly when no default section in cfg file
+742d47e feat : load data into the edit form
+c6fe5b0 feat : add api endpoint to update section
+c8e632a docs : update readme to fit changes
+de4d59c feat : add connection between endpoint and frontend, now possible to add a new treatment
+a2f6638 feat : add true order for read_csv and testfile for read_netcdf
+01b0272 style : move add traitement to top of treeview
+30c38aa feat,style,refactor : add api endpoint to add new section to file, rename different functions/variables and create different functions for repeated code
+8374b9e style,feat : add action buttons to form
+cb4bfd9 style : enhance field looks & add different way of conveying information to the user
+ce291c6 fix : change the way the input field is added to a field, preventing unwanted behaviour
+57806b3 docs : update select field to support multiple value selection in JSON forms documentation
+3c7cbc6 feat : manage multiple or single element select in formTraitement
+4cc1880 style : add label to fields and create togglable debug mode
+d129fd7 style : remove page/console debugging and update title style
+66482af refactor : move form_functions functions to different files depending on operations done
+e700060 refactor : move removeChildFields to external functions files
+33257cd refactor : move continueDisplayedList to separate file
+6630322 feat : add element under its parent instead of at the end of form (also add convert.json as a more indented testing file)
+478730d fix,feat : reload every child that had a value when deleted and manage delete with more than one depth level
+bf03f94 feat : dynamically remove fields when parent field content is empty
+c834d11 refactor : change the way dynamic fields are loaded
+2018c65 fix : vmodel not working properly with vuetify's v-select
+c019f67 feat : dynamic field child loading
+fa4b88b fix:  formFieldData loaded twice in certain scenarios in FormTraitement
+4189f42 feat : auto load form when changing field without having to click the load button
+4faeb2f feat : add dynamic loading of next fields (& a new field type)
+ad615ff feat : add poc of dynamic field values reading
+0529f28 style : add label to config files
+e00c976 refactor,style : rename variables & move getOrderKeys to form_functions
+804f26b feat : add fields characteristics fetching in traitement form
+8d97eea Merge branch 'working-again' of gitlab.in2p3.fr:ipsl/espri/espri-obs/reobs/tools/web-administrateur-reobs into working-again
+cd27856 feat : add api endpoint to fetch form field including default values
+53c497a feat : add dyanamic field for read type
+6112d86 docs : update docstrings in main.py
+97152d8 docs : edit ProjectSetup.md
+9f33537 feat : add form order fetching in traitement
+5c7905d feat : pick traitement to create from a file
+4b88d11 feat : add api endpoint for traitement fetching
+2be0e7e style : change input type in read_csv json config file
+ae8a6d4 feat : add distinction between create and update form
+f53db7d Merge branch 'working-again' of gitlab.in2p3.fr:ipsl/espri/espri-obs/reobs/tools/web-administrateur-reobs into working-again
+7857993 style : remove caps to match field
+ad9415e style : fix title in README
+206340a docs,refactor : change docs organisation to be more user friendly, add some paragraphs and move docs to its own folder
+0259311 style : change ident in JSON doc
+fa809de docs : update JSON traitement documentation with new fields and descriptions
+df2fef2 docs : add traitement docs and example traitement json
+5b1070d fix : add mistakenly removed constant back
+4fc21a4 feat : added first concept of traitement form
+67ae8b3 docs : add style guidelines to README
+9f2748f fix: add null check before setting currentFiliereName
+55b6884 style : rename filiere store and one variable in handleTreeItemClick
+f1d0922 feat,docs : add api endpoints for getting traitement keys/values & add docstrings to forgotten funcs
+7638a28 feat : add traitement showing logic
+76d7069 style: remove unnecessary styles for treeview list items
+6397df9 style,refactor : remove arrow for top/bottom directions at top/bottom of the treeview & refactor to use array
+779623d style : adjust margins and add hover effects for treeview items
+cadb5fa feat : move element in the interface in sync with the backend
+96aba09 style : add name to filiere store
+6ea1616 feat : move traitements in files through ui
+c276280 fix : change the splitter in data.py get_filiere_traitement_path
+f497cd1 feat : add create traitement button at the bottom of the treeview & made dummy event handling for treeview item
+5e9fc5b refactor,style : change vtreeview for custom treeview component
+72ec720 style : change click from title to item in treeview listitem
+f86369c style : update treeview backup message
+db933ac refactor,style : split listItem into two files, one basic and one for treeview
+f4d7868 feat : auto closing of treeview components on click of other one
+cd0e90d fix : better error handling in section.py
+028bd59 docs : update front end readme to fit changes
+f7fc711 feat : add traitement loading when clicking on component
+c568d32 feat,refactor : add prop for custom treeview options and move click handling to component
+5c4ad9f feat,refactor: add api endpoint for traitement titles and refactor "get names" type functions in data.py
+4c22536 style : align icons to end of item and remove treeview color change on hover
+5e0be6a feat : add treeview experimentation to filiere items
+72c0212 refactor : change component to be the complete item instead of the content
+0cd3385 refactor : create component for list item in different lists
+d9da47e docs : add tag to new route
+b79255d style : remove one comment and fix typo
+91b3804 feat : add api route to move section in traitement files
+2b46561 feat : add utility functions
+a154734 Merge branch 'working-again' of gitlab.in2p3.fr:ipsl/espri/espri-obs/reobs/tools/web-administrateur-reobs into working-again
+ae0dfb7 rearrange : add module list file
+c8cd7f1 fix : auto create .env file but this time it works
+84758f8 fix : auto create .env file in front end
+ed90897 feat : check for duplicate names when creating an entity
+44ca593 feat : add routes in front end & start coding the checkup
+1d5a968 feat : create api endpoints for name existence verification
+1e0e8a3 fix,feat : add input verification system
+828b7c3 fix : date from projet not in correct format
+5c9db0d fix : projet form on update
+68863b9 refactor,style : reduce code size and add comments in formfilierepattern
+ab32c63 style : change variable menu in form projet
+eb672dd style : change the way drag/drop interacts with form fields
+5975f78 fix : console error when dragging
+e157ba5 style : remove useless variable & add comment
+9285f07 Merge remote-tracking branch 'refs/remotes/origin/docker-hosting' into docker-hosting
+395bf16 feat : docker compose network working
+e52ea51 feat : add docker compose
 284eb3f feat : add frontend dockerfile
 b295f84 feat : add backend dockerfile
 a8a9de8 refactor : better/cleaner fix for double quotation bug mentionned in commit c30e15df458d86e9a63a8f6fa9da1ab75b6c3072
@@ -78,7 +184,7 @@ e76b302 fix : repair this context in add/remove field
 cf3fc68 rearrange : delete script_form, now useless
 6074aa1 style : correct name of filiere_form's export
 ac1d46c refactor : change mixin for class in station_form
-955dfa2 refactor : change mixin for class in base_form
+955dfa2 refactor :  change mixin for class in base_form
 5481f7a refactor : change mixin for class in filiere_form
 64c77a4 refactor : change function calls for better understanding
 6aa852d style : rearrange func and better spacing
@@ -87,11 +193,11 @@ ac1d46c refactor : change mixin for class in station_form
 97b65d3 style,refactor : merge station update/create in one file and rename patern to pattern in code
 85349e0 refactor : merge update/create base form into one file
 4c16909 refactor : merged update/create form into one file
-2338420 style : change icon & select file
-acc4f26 fix : other explorers
-a3b290e style : differenciation folder/file mal nommée & documentée
-a816aac docs : Edit README.md
-296917d fix : more hardcoded stuff
-a7b5b32 style : better debugging on bases
-b6943e9 refactor : remove hardcoded domain dans bases.vue
-a8947f1 fix : sur les projets, le reste bug tjrs
+2338420 change icon & select file
+acc4f26 fix other explorers
+a3b290e differenciation folder/file mal nommée & documentée
+a816aac Edit README.md
+296917d fix more hardcoded stuff
+a7b5b32 better debugging on bases
+b6943e9 remove hardcoded domain dans bases.vue
+a8947f1 fix sur les projets, le reste bug tjrs

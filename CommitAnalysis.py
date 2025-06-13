@@ -1,5 +1,7 @@
 import re
 import enum
+from collections import defaultdict
+from datetime import datetime
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -19,7 +21,7 @@ def split_commit_types(multipleCommitTypes):
         commitTypeList = []
         multipleCommitTypes = multipleCommitTypes.split(MULTIPLE_TYPE_SEPARATOR)
         for oneType in multipleCommitTypes:
-                oneType = oneType.strip() #if there is any whitespace around your types, this will remove it
+                oneType = oneType.lower().strip() #normalize output
                 commitTypeList.append(oneType)
         return commitTypeList
 
@@ -51,7 +53,56 @@ def get_commit_type(commitMessage): #returns a list of commit types, even if the
                 return [commitType]
         else : 
                 return []
-                
+
+def commits_over_time_graph():
+        """
+        get the corresponding file with : git log --pretty=format:"%h%x09%an%x09%ad%x09%s"
+        """
+        commit_counts = defaultdict(lambda: defaultdict(int))
+
+        with open(COMMIT_HISTORY_DATED_FILE_PATH) as commitFile:
+                for line in commitFile:
+                        parts = line.strip().split("\t")
+                        if len(parts) < 4:
+                                continue  # skip malformed lines
+                        commit_id, author, date_str, message = parts
+                        date_str = get_day_year_from_time(date_str)
+                        commit_types = get_commit_type(message.strip())
+
+                        for ctype in commit_types:
+                                ctype = ctype.lower().strip()
+                                if ctype.startswith("merge"):  # exclude branch merges
+                                        continue
+                                if ctype == "doc":
+                                        ctype = "docs"
+                                commit_counts[date_str][ctype] += 1
+
+        sorted_dates = sorted(commit_counts.keys(), key=lambda d: datetime.strptime(d, "%b %d %Y"))
+
+        # Gather all commit types
+        all_commit_types = set()
+        for counts in commit_counts.values():
+                all_commit_types.update(counts.keys())
+
+        # Build data for plotting
+        plot_data = {ctype: [] for ctype in all_commit_types}
+        for date in sorted_dates:
+                counts = commit_counts[date]
+                for ctype in all_commit_types:
+                        plot_data[ctype].append(counts.get(ctype, 0))
+
+        # Plot
+        plt.figure(figsize=(12, 6))
+        for ctype, y_values in plot_data.items():
+                plt.plot(sorted_dates, y_values, marker='o', label=ctype)
+
+        plt.xlabel("Date")
+        plt.ylabel("Number of commits")
+        plt.title("Commit types over time")
+        plt.legend()
+        plt.xticks(rotation=45)
+        plt.tight_layout()
+        plt.show()
 
 def occurence_graph():
         commitTypeList =[]
@@ -64,7 +115,7 @@ def occurence_graph():
                                         commitTypeList.extend(split_commit_types(commitType))
                                         continue # instructs the program to come back at the top of the loop, otherwise the old double type would be added to the list
 
-                                commitTypeList.append(commitType)
+                                commitTypeList.append(commitType.lower().strip())
 
         commitTypes,commitOccurences = type_list_to_occurence_graph(commitTypeList)
 
@@ -81,54 +132,4 @@ def occurence_graph():
 
 
 # ---------------------- Main -----------------------
-"""
-using this : " git log --pretty=format:"%h%x09%an%x09%ad%x09%s" " could work
-"""
-
-commitTypeList =[]
-with open(COMMIT_HISTORY_DATED_FILE_PATH) as commitFile : 
-        for line in commitFile:
-                line = line.split("\t") #get list like this : [commitID,AutorName,Exact date,commit message]
-                line[2] = get_day_year_from_time(line[2])
-                line[3] = get_commit_type(line[3].strip())
-                
-
-"""
-dates = ['2024-04-01', '2024-04-02']
-things = ['thing1', 'thing2']
-
-# Example counts: rows = dates, columns = things
-data = [
-    [1, 2],  # April 1: thing1 = 1, thing2 = 2
-    [1, 0],  # April 2: thing1 = 1, thing2 = 0
-]
-
-data = np.array(data)
-bar_width = 0.35
-x = np.arange(len(dates))  # [0, 1]
-
-# Plot each group of bars
-for i in range(len(things)):
-    plt.bar(x + i * bar_width, data[:, i], width=bar_width, label=things[i])
-
-# Set x-ticks in the center of grouped bars
-plt.xticks(x + bar_width / 2, dates)
-plt.xlabel('Date')
-plt.ylabel('Count')
-plt.title('Grouped Bar Chart Example')
-plt.legend(title='Thing')
-plt.tight_layout()
-plt.show()
-"""
-"""
-        if line.__contains__(TYPE_TEXT_SEPARATOR):
-                commitIdAndType, _ = line.split(TYPE_TEXT_SEPARATOR) #get the half part of the line that has commit id and type
-                commitType = commitIdAndType.split(" ")[1] #splitting with the spaces gets you [commitid,commit type,(sometimes) blank space]
-                if(commitType.__contains__(MULTIPLE_TYPE_SEPARATOR)):
-                        commitTypeList.extend(split_commit_types(commitType))
-                        continue # instructs the program to come back at the top of the loop, otherwise the old double type would be added to the list
-
-                commitTypeList.append(commitType)
-
-                """
-#print(commitTypeList)
+occurence_graph()
