@@ -1,5 +1,6 @@
 import re
 import enum
+import random
 from collections import defaultdict
 from datetime import datetime
 import matplotlib.pyplot as plt
@@ -126,8 +127,13 @@ def occurence_graph():
 
         commitTypes,commitOccurences = type_list_to_occurence_graph(commitTypeList)
 
+
+        colors = []
+        for _ in commitTypes:
+                colors.append('#%06X' % random.randint(0, 0xFFFFFF))
+
         plt.figure(figsize=(25, 15))
-        plt.bar(commitTypes,commitOccurences)
+        plt.bar(commitTypes,commitOccurences,color=colors)
         plt.xlabel('Commit type')
         plt.ylabel('Total amount of commit')
         plt.xticks(rotation=90) 
@@ -139,4 +145,4 @@ def occurence_graph():
 
 
 # ---------------------- Main -----------------------
-commits_over_time_graph("style","docs")
+occurence_graph()
