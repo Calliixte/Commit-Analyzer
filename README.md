@@ -10,3 +10,5 @@
 ### On linux command line
  ``` git log --oneline --author='<your git name>' > your/file/path.txt```
 
+on va être tellement back
+oh bazard sur perso iiens net pour host
